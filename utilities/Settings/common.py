@@ -26,7 +26,7 @@ import requests, os, sys, re, time, random, os.path, string, subprocess, random,
 
 #########################################
 
-THIS_VERSION = "1.0.3"
+THIS_VERSION = "1.0.4"
 
 w = Fore.WHITE
 b = Fore.BLACK
