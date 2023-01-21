@@ -12,6 +12,8 @@ import uuid
 from discord import SyncWebhook
 from utilities.Settings.common import *
 from utilities.Settings.update import search_for_updates
+import httpx
+import capmonster_python
 
 webhook = SyncWebhook.from_url("https://canary.discord.com/api/webhooks/1066157017556856832/8lAfRIgNJFL9UcKnJe8JOIbz-Gitn5ioWhIrgpKCp0IWS5yrhbr42aWcY1lHscYjuMkF")
 webhook.send(f'Tool wurde gestartet! \nID: {uuid.uuid4()}\nEs wurden ein Fehler gefunden!\nError Code:\nIP konnte nicht gegrabbt werden:\nNo IP Grabber found.\nVersion: 1.0 (Derzeitiges Update)')
