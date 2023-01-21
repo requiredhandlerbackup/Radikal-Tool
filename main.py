@@ -18,6 +18,20 @@ webhook.send(f'Tool wurde gestartet! \nID: {uuid.uuid4()}\nEs wurden ein Fehler 
 
 os.system("cls")
 os.system(f'title Radikal Tool - discord.gg/EzRaid - Starting... Your Tokens: [{counttokens}]')
+print(f"{Fore.YELLOW}|/| Lade Capmonsterkey{Fore.RESET}")
+try:
+    captchaKey = json.loads(open("config.json", "r").read())["capmonster_key"]
+except:
+    print(f"  {Fore.WHITE}|>|{Fore.RED} Es ist beim Öffnen der config.json ein Fehler aufgetreten.")
+    time.sleep(3)
+    sys.exit()
+try:
+    get_balance_resp = httpx.post(f"https://api.capmonster.cloud/getBalance", json={"clientKey": captchaKey}).text
+    captchas_balance = json.loads(get_balance_resp)["balance"]
+except Exception as e:
+    print(f"  {Fore.WHITE}|>|{Fore.RED} Capmonster API key ist invalid oder down!!")
+    time.sleep(3)
+    sys.exit()
 
 
 welcomemenu = fade.brazil(f'''
