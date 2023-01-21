@@ -85,7 +85,7 @@ def title():
    ░   ░   ░   ▒   ░ ░  ░ ░ ▒ ░░ ░░ ░   ░   ▒     ░ ░      
    ░           ░     ░      ░  ░  ░         ░  ░    ░   
                 Thanks for buying <3
-       Captchas: [${captchas_balance}]
+                Captchas: [${captchas_balance}]
     ''')
     print(maintitle)
 
