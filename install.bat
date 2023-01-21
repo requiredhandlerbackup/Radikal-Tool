@@ -1,1 +1,0 @@
-pip install uuid, random, json, threading, sys, stdiomask, requests, fade, os, time
