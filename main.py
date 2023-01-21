@@ -73,7 +73,6 @@ def title():
     os.system('cls' if os.name == 'nt' else 'clear')
     os.system(f'title Radikal Tool - discord.gg/EzRaid - Thanks for buying... - Main Menu - Your Tokens: [{counttokens}]')
     maintitle = fade.fire(f'''
-
  ██▀███   ▄▄▄     ▓█████▄   ██▓ ██ ▄█▀ ▄▄▄       ██▓       
 ▓██ ▒ ██▒▒████▄   ▒██▀ ██▌▒▓██▒ ██▄█▒ ▒████▄    ▓██▒       
 ▓██ ░▄█ ▒▒██  ▀█▄ ░██   █▌▒▒██▒▓███▄░ ▒██  ▀█▄  ▒██░       
@@ -83,6 +82,8 @@ def title():
   ░▒ ░ ▒░░ ░   ▒▒  ░ ▒  ▒ ░ ▒ ░░ ░▒ ▒░░ ░   ▒▒ ░░ ░ ▒      
    ░   ░   ░   ▒   ░ ░  ░ ░ ▒ ░░ ░░ ░   ░   ▒     ░ ░      
    ░           ░     ░      ░  ░  ░         ░  ░    ░   
+                Thanks for buying <3
+            Captchas: [${captchas_balance}]
     ''')
     print(maintitle)
 
@@ -253,4 +254,3 @@ def getheaders(token=None, content_type="application/json"):
 
 toolstartet()
 login()
-
